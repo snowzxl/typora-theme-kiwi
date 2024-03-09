@@ -1,0 +1,414 @@
+/* 
+ *     Typora Theme - Kiwi
+ */
+
+@import url("./kiwi/font.css");
+@import url("./kiwi/code-mirror.css");
+@import url("./kiwi/sourcemode.css");
+
+:root {
+  --bg-color: #292d30; /*change background*/
+  --bg-color-light: #32373b; /*change background fade */
+  --text-color: #e8e8e8; /*change text color*/
+  --md-char-color: #fc8a17; /*change color of meta characetrs like `*` in markdown */
+  --meta-content-color: #fc8a17; /*change color of meta contents like image text or link address in markdown */
+  --blur-text-color: #c8c8c8;
+  --drag-placeholder-color: #c7c5c5;
+  --panel-border-color: #777777;
+  --active-toggle-btn-color: #b1d725; /* btn border and active color */
+  --table-border-color: #3d454d; /* table border color */
+  --primary-color: #c0d725; /* theme color, sidebar sort btn, */
+  --primary-btn-border-color: red;
+  --primary-btn-text-color: green;
+  --search-select-bg-color: green;
+  --search-select-text-color: #fff;
+  --heading-char-color: #b1d725; /* headlings tips color */
+  --color-popover-bg-color: #fafafa;
+  --control-text-color: var(--text-color);
+  --control-text-hover-color: var(--text-color);
+  --window-border: 1px solid #32373b; /* window btn border color */
+  --active-file-bg-color: #3d454d; /*background color if list item in file tree or file list*/
+  --active-file-text-color: #b1d725; /* filenode and outline active */
+  --active-file-border-color: #b1d725;
+  --focus-ring-color: #32373b;
+  --side-bar-bg-color: #32373b; /*change background of sidebar*/
+  --item-hover-bg-color: #3d454d; /* hover background */
+  --item-hover-text-color: #b1d725; /* hover background */
+  --side-bar-menu-active-tint: red;
+  --mac-title-bar-height: 20px;
+  --sidebar-width: 270px;
+  --rawblock-edit-panel-bd: #32373b; /* eg:math edit bg color*/
+  --toc-text-color: #808f19; /* toc color */
+
+  /* font */
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-h5: 1.125em;
+  --font-size-h6: 1rem;
+  --font-size-normal: 100%;
+  --font-size-small: 87.5%;
+  --font-size-small-2: 81.25%;
+  --font-size-small-3: 75%;
+  --font-size-small-4: 62.5%;
+  --font-size-inlinecode: var(--font-size-small);
+  --font-size-sidebar: var(--font-size-normal);
+  --font-size-img: var(--font-size-small);
+  --font-size-fences: var(--font-size-normal);
+}
+
+body {
+  font-family: "TypeLatin", "TypeCJK";
+}
+
+::selection {
+  color: #fff;
+  background-color: blue;
+}
+
+#write {
+  font-size: 100%;
+  max-width: 950px;
+  line-height: 1.6;
+}
+
+/* toc */
+#write a.md-toc-inner {
+  color: var(--toc-text-color);
+}
+
+#write div.md-toc-tooltip {
+  color: var(--toc-text-color);
+  background-color: var(--bg-color) !important;
+  font-size: 1.4rem;
+}
+
+.md-toc-h2 .md-toc-inner {
+  margin-left: 1rem;
+}
+.md-toc-h3 .md-toc-inner {
+  margin-left: 2rem;
+}
+.md-toc-h4 .md-toc-inner {
+  margin-left: 3rem;
+}
+.md-toc-h5 .md-toc-inner {
+  margin-left: 4rem;
+}
+.md-toc-h6 .md-toc-inner {
+  margin-left: 5rem;
+}
+
+/* headings */
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  padding: 0px;
+}
+
+#write h1 {
+  color: var(--primary-color);
+}
+
+#write h1 > span {
+  position: relative;
+  display: inline-block;
+}
+#write h1 > span:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 3px solid var(--bg-color-light);
+  height: 3px;
+  width: 100%;
+  max-width: 100%;
+  right: 2%;
+  transform: translateX(2%);
+}
+
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  color: var(--text-color);
+}
+
+#write h1 {
+  text-align: right;
+}
+
+#write h1 {
+  font-size: var(--font-size-h1);
+}
+
+#write h2 {
+  font-size: var(--font-size-h2);
+}
+
+#write h3 {
+  font-size: var(--font-size-h3);
+}
+
+#write h4 {
+  font-size: var(--font-size-h4);
+}
+
+#write h5 {
+  font-size: var(--font-size-h5);
+}
+
+#write h6 {
+  font-size: var(--font-size-h6);
+}
+
+/* Basic Syntax,Extended Syntax */
+/* strong */
+#write strong {
+  color: var(--primary-color);
+}
+
+/* em */
+#write em {
+  color: var(--primary-color);
+}
+
+/*link*/
+#write a {
+  color: var(--primary-color);
+}
+
+/* highlight */
+mark {
+  color: var(--primary-color);
+  background-color: var(--bg-color-light);
+  padding: 1px 0.15rem;
+  border-radius: 1px;
+}
+
+/* blockquote */
+blockquote {
+  background-color: var(--bg-color-light);
+  border-left: 0.2rem solid var(--primary-color);
+  padding-left: 1rem;
+}
+
+/* paragraph */
+p {
+  font-size: var(--font-size-normal);
+  color: var(--text-color);
+  margin: 0.8em 0;
+}
+
+/* inline code */
+code {
+  font-size: var(--font-size-inlinecode);
+  color: var(--primary-color);
+  background-color: var(--bg-color-light);
+  padding: 2px 4px 0px 4px;
+}
+
+/* img */
+.md-image > .md-meta {
+  color: var(--meta-content-color);
+  font-size: var(--font-size-img);
+}
+
+/* Footnote */
+sup.md-footnote {
+  color: var(--primary-color);
+  background-color: var(--bg-color-light);
+}
+
+.md-def-name {
+  color: var(--primary-color);
+}
+
+/* list */
+li::marker {
+  font-weight: bold;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+/* comment */
+.md-comment {
+  color: var(--text-color);
+  opacity: 0.5;
+}
+
+/* check box */
+#write input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+/* dividing line */
+hr {
+  border-top: 2px solid var(--bg-color-light);
+}
+
+/* table */
+table th,
+table td {
+  padding: 8px;
+  border: 1px solid var(--table-border-color);
+}
+
+table tr:nth-child(1n) td {
+  background-color: var(--bg-color-light);
+}
+
+table tr:nth-child(2n) td {
+  background-color: var(--bg-color);
+}
+
+/*side bar */
+.outline-active {
+  color: var(--active-file-text-color);
+}
+
+#file-library-search-input:focus {
+  border-color: var(--active-toggle-btn-color);
+}
+
+.form-control:focus {
+  border-color: var(--active-toggle-btn-color);
+}
+
+.ty-show-search #info-panel-tab-search .info-panel-tab-border,
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border {
+  color: var(--active-toggle-btn-color);
+}
+
+.ty-side-sort-btn:hover {
+  color: var(--item-hover-text-color);
+}
+
+.ty-side-sort-btn.active {
+  color: var(--active-file-text-color);
+  background: var(--active-file-bg-color);
+}
+
+.sidebar-folder-right-icon:hover {
+  color: var(--item-hover-text-color);
+  background: var(--item-hover-bg-color);
+}
+
+#outline-btn:hover {
+  color: var(--item-hover-text-color);
+  background: var(--item-hover-bg-color);
+}
+
+#sidebar-menu-btn > .sidebar-footer-item:hover {
+  color: var(--item-hover-text-color);
+  background: var(--item-hover-bg-color);
+}
+
+/* source view */
+.typora-sourceview-on #toggle-sourceview-btn {
+  color: var(--text-color);
+  background: var(--bg-color-light);
+}
+
+.typora-sourceview-on #toggle-sourceview-btn:hover {
+  color: var(--item-hover-text-color);
+  background: var(--item-hover-bg-color);
+}
+
+/* code fences */
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+  color: #fff !important;
+  background: blue !important;
+}
+
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 3px solid #e4629a;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #e4629a;
+}
+
+.CodeMirror-linenumber {
+  color: #c0d725;
+  font-family: "TypeMono";
+  opacity: 1;
+}
+
+.cm-s-typora-default .cm-overlay,
+.cm-s-typora-default .cm-block-start,
+.cm-s-typora-default .cm-table-row,
+.CodeMirror pre {
+  font-family: "TypeMono", "TypeCJK";
+  font-size: var(--font-size-fences);
+}
+
+.md-fences {
+  background-color: var(--bg-color-light);
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.4rem 0rem 0.4rem 0rem;
+  margin: 0.6rem 0rem 0.6rem 0rem;
+}
+
+.CodeMirror-gutters {
+  border-right: 1px solid var(--table-border-color);
+}
+
+.CodeMirror.cm-s-inner {
+  background: var(--bg-color-light);
+}
+
+/* math edit*/
+.md-math-tag-input:focus {
+  color: var(--meta-content-color);
+  outline: 0;
+}
+
+/* quick open*/
+#typora-quick-open-input input {
+  border-color: var(--active-toggle-btn-color);
+}
+
+#typora-quick-open-input input:focus {
+  outline: 0;
+}
+
+/* window */
+.btn-primary {
+  border-color: rgba(204, 204, 204, 0.51);
+  background: rgba(204, 204, 204, 0.51);
+}
+
+.btn-default {
+  border-color: rgba(204, 204, 204, 0.51);
+  background: rgba(204, 204, 204, 0.51);
+}
+
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-default {
+  background-color: var(--item-hover-bg-color);
+  color: var(--item-hover-text-color);
+}
+
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: var(--item-hover-bg-color);
+  color: var(--item-hover-text-color);
+}

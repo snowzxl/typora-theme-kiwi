@@ -1,0 +1,88 @@
+/* refer to theme one dark */
+/* https://github.com/codemirror/theme-one-dark */
+
+@charset "UTF-8";
+/* CSS Document */
+
+/** code highlight */
+.cm-s-typora-default .cm-comment {
+  color: #7d8799;
+}
+
+.cm-s-typora-default .cm-tag,
+.cm-s-typora-default .cm-property {
+  color: #e06c75;
+}
+
+.cm-s-typora-default .cm-punctuation,
+.cm-s-typora-default .cm-bracket {
+  color: #997;
+}
+
+.cm-s-typora-default .cm-number {
+  color: #e5c07b;
+}
+
+.cm-s-typora-default .cm-qualifier {
+  color: #6272a4;
+}
+
+.cm-s-typora-default .cm-string,
+.cm-s-typora-default .cm-string-2 {
+  color: #98c379;
+}
+
+.cm-s-typora-default .cm-attribute {
+  color: #e06c75;
+}
+
+.cm-s-typora-default .cm-operator {
+  color: #56b6c2;
+}
+
+.cm-s-typora-default .cm-atom {
+  color: #d19a66;
+}
+
+.cm-s-typora-default .cm-keyword {
+  color: #c678dd;
+}
+
+.cm-s-typora-default .cm-def {
+  color: #abb2bf;
+}
+
+.cm-s-typora-default .cm-variable,
+.cm-s-typora-default .cm-variable-2,
+.cm-s-typora-default .cm-variable-3 {
+  color: #61afef;
+}
+
+.cm-s-typora-default .cm-quote {
+  color: #57ac57;
+}
+
+.cm-s-typora-default .cm-negative {
+  color: #282a36;
+}
+
+.cm-s-typora-default .cm-positive {
+  color: #191a21;
+}
+
+.cm-s-typora-default .cm-builtin {
+  color: #f3b3f8;
+}
+
+.cm-s-typora-default .cm-link {
+  color: #56b6c2;
+}
+
+.cm-s-typora-default .cm-meta {
+  color: #ff79c6;
+}
+
+.cm-s-typora-default .cm-hr,
+.cm-s-typora-default .cm-header {
+  color: #f1fa8c;
+}
