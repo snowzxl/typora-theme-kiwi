@@ -29,7 +29,7 @@ src="https://img.shields.io/github/downloads/snowzxl/typora-theme-kiwi/total?sty
 
 <div align="center">Dark</div>
 
-You can use [md_syntax.md](https://github.com/snowzxl/typora-theme-kiwi/md_syntax.md) file to preview other syntax styles.
+You can use [md_syntax.md](https://github.com/snowzxl/typora-theme-kiwi/blob/main/md_syntax.md) file to preview other syntax styles.
 
 ## Installation
 
@@ -40,19 +40,30 @@ You can use [md_syntax.md](https://github.com/snowzxl/typora-theme-kiwi/md_synta
 
 ## Tips
 
-Font type
+Font type:
 
 - Latin font type [Open Sans](https://fonts.google.com/specimen/Open+Sans);
 
-- Chinese font type [霞鹜文楷](https://github.com/lxgw/LxgwWenKai);
+- Chinese font type [LxgwWenKai](https://github.com/lxgw/LxgwWenKai);
 
 - Monospace with font [Cascadia code](https://github.com/microsoft/cascadia-code) using in source code mode and fenced code blocks.
+
+Code Syntax highlight:
+
+- Code fences use [code-mirror.css](https://github.com/snowzxl/typora-theme-kiwi/blob/main/kiwi/code-mirror.css);
+-  source code mode use  [sourcemode.css](https://github.com/snowzxl/typora-theme-kiwi/blob/main/kiwi/sourcemode.css).
 
 Only tested on Windows, not tested on MacOS/Linux.
 
 If you have any issues or suggestions, welcome to submit [Issues](https://github.com/snowzxl/typora-theme-kiwi/issues).
 
-## Todo
+## Acknowledgements
+
+Kiwi is inspired and guided by (and borrows elements from) some excellent works.
+
+- [Typora Documents](https://theme.typora.io/doc/) for find how to write a theme
+- [Nord](https://www.nordtheme.com/) foe syntax highlight
+- [LxgwWenKai](https://github.com/lxgw/LxgwWenKai) and [Cascadia code ](https://github.com/microsoft/cascadia-code)for font type.
 
 ## License
 

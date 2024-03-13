@@ -4,6 +4,7 @@
 
 @import url("./kiwi/font.css");
 @import url("./kiwi/code-mirror.css");
+@import url("./kiwi/sourcemode.css");
 
 :root {
   --bg-color: #ffffff; /*change background*/
@@ -63,7 +64,7 @@ body {
 
 ::selection {
   color: #fff;
-  background-color: blue;
+  background-color: #3165cf;
 }
 
 #write {
@@ -325,19 +326,9 @@ table tr:nth-child(2n) td {
   background: var(--item-hover-bg-color);
 }
 
-/* code fences */
-.CodeMirror-linenumber {
-  color: #c0d725;
-  font-family: "TypeMono";
-  opacity: 1;
-}
-
-.cm-s-typora-default .cm-overlay,
-.cm-s-typora-default .cm-block-start,
-.cm-s-typora-default .cm-table-row,
-.CodeMirror pre {
-  font-family: "TypeMono", "TypeCJK";
-  font-size: var(--font-size-fences);
+/* code blcok styles: code fences and source code mode */
+.cm-s-typora-default .cm-header {
+  color: var(--primary-color);
 }
 
 .md-fences {
@@ -352,8 +343,42 @@ table tr:nth-child(2n) td {
   border-right: 1px solid var(--table-border-color);
 }
 
-.CodeMirror.cm-s-inner {
-  background: var(--bg-color-light);
+.CodeMirror-linenumber {
+  color: var(--primary-color);
+  font-family: "TypeMono";
+  opacity: 1;
+}
+
+.cm-s-inner .CodeMirror-activeline-background,
+.cm-s-typora-default .CodeMirror-activeline-background {
+  background: var(--active-file-bg-color) !important;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket,
+.cm-s-typora-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: var(--primary-color) !important;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid #fff;
+}
+.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
+  border-left: 3px solid #fff;
+}
+
+.CodeMirror-selectedtext,
+.CodeMirror-selected {
+  color: #fff !important;
+  background: #3165cf !important;
+}
+
+.cm-s-typora-default .cm-overlay,
+.cm-s-typora-default .cm-block-start,
+.cm-s-typora-default .cm-table-row,
+.CodeMirror pre {
+  font-family: "TypeMono", "TypeCJK";
+  font-size: var(--font-size-fences);
 }
 
 /* math edit*/

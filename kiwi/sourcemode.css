@@ -1,88 +1,95 @@
-/* refer to theme one dark */
-/* https://github.com/codemirror/theme-one-dark */
+/* Code Block Styles */
+/* https://helpx.adobe.com/fi/dreamweaver/using/customize-code-coloring.html#customize-code-color-examples */
+/* https://help.adobe.com/en_US/dreamweaver/TokenInspector/CM-Modes-Interactive/demo/TokenInspector.html */
+/* https://github.com/nordtheme/nord/blob/develop/src/nord.css */
 
 @charset "UTF-8";
-/* CSS Document */
 
 /** code highlight */
-.cm-s-typora-default .cm-comment {
-  color: #7d8799;
-}
-
-.cm-s-typora-default .cm-tag,
-.cm-s-typora-default .cm-property {
-  color: #e06c75;
-}
-
-.cm-s-typora-default .cm-punctuation,
-.cm-s-typora-default .cm-bracket {
-  color: #997;
-}
-
-.cm-s-typora-default .cm-number {
-  color: #e5c07b;
-}
-
-.cm-s-typora-default .cm-qualifier {
-  color: #6272a4;
-}
-
-.cm-s-typora-default .cm-string,
-.cm-s-typora-default .cm-string-2 {
-  color: #98c379;
+.cm-s-typora-default .cm-atom {
+  color: #ebcb8b;
 }
 
 .cm-s-typora-default .cm-attribute {
-  color: #e06c75;
+  color: #d8dee9;
 }
 
-.cm-s-typora-default .cm-operator {
-  color: #56b6c2;
-}
-
-.cm-s-typora-default .cm-atom {
-  color: #d19a66;
-}
-
-.cm-s-typora-default .cm-keyword {
-  color: #c678dd;
-}
-
-.cm-s-typora-default .cm-def {
-  color: #abb2bf;
-}
-
-.cm-s-typora-default .cm-variable,
-.cm-s-typora-default .cm-variable-2,
-.cm-s-typora-default .cm-variable-3 {
-  color: #61afef;
-}
-
-.cm-s-typora-default .cm-quote {
-  color: #57ac57;
-}
-
-.cm-s-typora-default .cm-negative {
-  color: #282a36;
-}
-
-.cm-s-typora-default .cm-positive {
-  color: #191a21;
+.cm-s-typora-default .cm-bracket {
+  color: #eceff4;
 }
 
 .cm-s-typora-default .cm-builtin {
-  color: #f3b3f8;
+  color: #d08770;
 }
 
-.cm-s-typora-default .cm-link {
-  color: #56b6c2;
+.cm-s-typora-default .cm-comment {
+  color: #4c566a;
+}
+
+.cm-s-typora-default .cm-def {
+  color: #88c0d0;
+}
+
+.cm-s-typora-default .cm-error {
+  color: #bf616a;
+}
+
+.cm-s-typora-default .cm-keyword {
+  color: #81a1c1;
 }
 
 .cm-s-typora-default .cm-meta {
-  color: #ff79c6;
+  color: #5e81ac;
 }
 
-.cm-s-typora-default .cm-hr,
-.cm-s-typora-default .cm-header {
-  color: #f1fa8c;
+.cm-s-typora-default .cm-number {
+  color: #b48ead;
+}
+
+.cm-s-typora-default .cm-operator {
+  color: #81a1c1;
+}
+
+.cm-s-typora-default .cm-property {
+  color: #d8dee9;
+}
+
+.cm-s-typora-default .cm-qualifier {
+  color: #5e81ac;
+}
+
+.cm-s-typora-default .cm-string {
+  color: #a3be8c;
+}
+
+.cm-s-typora-default .cm-string-2 {
+  color: #a3be8c;
+}
+
+.cm-s-typora-default .cm-tag {
+  color: #8fbcbb;
+}
+
+.cm-s-typora-default .cm-variable {
+  color: #d8dee9;
+}
+
+.cm-s-typora-default .cm-variable-2 {
+  color: #d8dee9;
+}
+
+.cm-s-typora-default .cm-variable-3 {
+  color: #81a1c1;
+}
+
+.cm-s-typora-default .cm-punctuation {
+  color: #eceff4;
+}
+
+.cm-s-typora-default .cm-quote {
+  color: #88c0d0;
+}
+
+.cm-s-typora-default .cm-link {
+  color: #88c0d0;
 }
