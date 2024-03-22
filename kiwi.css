@@ -349,7 +349,11 @@ table tr:nth-child(2n) td {
   opacity: 1;
 }
 
-.cm-s-inner .CodeMirror-activeline-background,
+/* do not highlight in code fences */
+.cm-s-inner .CodeMirror-activeline-background {
+  background: var(--bg-color-light) !important;
+}
+
 .cm-s-typora-default .CodeMirror-activeline-background {
   background: var(--active-file-bg-color) !important;
 }
@@ -361,10 +365,10 @@ table tr:nth-child(2n) td {
 }
 
 .CodeMirror div.CodeMirror-cursor {
-  border-left: 1px solid #fff;
+  border-left: 1px solid var(--text-color);
 }
 .CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-  border-left: 3px solid #fff;
+  border-left: 2px solid var(--text-color);
 }
 
 .CodeMirror-selectedtext,
