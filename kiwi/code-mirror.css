@@ -11,11 +11,11 @@
 }
 
 .cm-s-inner .cm-attribute {
-  color: #d8dee9;
+  color: #2e3440;
 }
 
 .cm-s-inner .cm-bracket {
-  color: #eceff4;
+  color: #ebcb8b;
 }
 
 .cm-s-inner .cm-builtin {
@@ -51,7 +51,7 @@
 }
 
 .cm-s-inner .cm-property {
-  color: #d8dee9;
+  color: #2e3440;
 }
 
 .cm-s-inner .cm-qualifier {
@@ -71,11 +71,11 @@
 }
 
 .cm-s-inner .cm-variable {
-  color: #d8dee9;
+  color: #88c0d0;
 }
 
 .cm-s-inner .cm-variable-2 {
-  color: #d8dee9;
+  color: #88c0d0;
 }
 
 .cm-s-inner .cm-variable-3 {
@@ -83,7 +83,7 @@
 }
 
 .cm-s-inner .cm-punctuation {
-  color: #eceff4;
+  color: #81a1c1;
 }
 
 .cm-s-inner .cm-quote {
