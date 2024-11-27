@@ -7,9 +7,9 @@
 @import url("./kiwi/sourcemode.css");
 
 :root {
-  --bg-color: #ffffff; /*change background*/
-  --bg-color-light: #f2f2f2; /*change background fade */
-  --text-color: #313131; /*change text color*/
+  --bg-color: #f9f9f9; /*change background*/
+  --bg-color-light: #eeeeee; /*change background fade */
+  --text-color: #1a1a1a; /*change text color*/
   --md-char-color: #fc8a17; /*change color of meta characetrs like `*` in markdown */
   --meta-content-color: #fc8a17; /*change color of meta contents like image text or link address in markdown */
   --blur-text-color: #c8c8c8;
@@ -17,7 +17,7 @@
   --panel-border-color: #777777;
   --active-toggle-btn-color: #b1d725; /* btn border and active color */
   --table-border-color: #e6e6e6; /* table border color */
-  --primary-color: #c0d725; /* theme color, sidebar sort btn, */
+  --primary-color: #c0d725; /* theme color, sidebar sort btn,  */
   --primary-btn-border-color: red;
   --primary-btn-text-color: green;
   --search-select-bg-color: green;
@@ -26,18 +26,18 @@
   --color-popover-bg-color: #fafafa;
   --control-text-color: var(--text-color);
   --control-text-hover-color: var(--text-color);
-  --window-border: 1px solid #f2f2f2; /* window btn border color */
+  --window-border: 1px solid #f3f3f3; /* window btn border color */
   --active-file-bg-color: #e6e6e6; /*background color if list item in file tree or file list*/
   --active-file-text-color: #b1d725; /* filenode and outline active */
   --active-file-border-color: #b1d725;
-  --focus-ring-color: #f2f2f2;
-  --side-bar-bg-color: #f2f2f2; /*change background of sidebar*/
+  --focus-ring-color: #f3f3f3;
+  --side-bar-bg-color: #f3f3f3; /*change background of sidebar*/
   --item-hover-bg-color: #e6e6e6; /* hover background */
   --item-hover-text-color: #b1d725; /* hover background */
   --side-bar-menu-active-tint: red;
   --mac-title-bar-height: 20px;
   --sidebar-width: 270px;
-  --rawblock-edit-panel-bd: #f2f2f2; /* eg:math edit bg color*/
+  --rawblock-edit-panel-bd: #f3f3f3; /* eg:math edit bg color*/
   --toc-text-color: #808f19; /* toc color */
 
   /* font */
@@ -52,7 +52,7 @@
   --font-size-small-2: 81.25%;
   --font-size-small-3: 75%;
   --font-size-small-4: 62.5%;
-  --font-size-inlinecode: var(--font-size-small);
+  --font-size-inlinecode: var(--font-size-normal);
   --font-size-sidebar: var(--font-size-normal);
   --font-size-img: var(--font-size-small);
   --font-size-fences: var(--font-size-normal);
@@ -184,8 +184,8 @@ body {
 
 /* highlight */
 mark {
-  color: var(--primary-color);
-  background-color: var(--bg-color-light);
+  color: #ffffff;
+  background-color: var(--primary-color);
   padding: 1px 0.15rem;
   border-radius: 1px;
 }
@@ -194,7 +194,7 @@ mark {
 blockquote {
   background-color: var(--bg-color-light);
   border-left: 0.2rem solid var(--primary-color);
-  padding-left: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 /* paragraph */
@@ -207,8 +207,8 @@ p {
 /* inline code */
 code {
   font-size: var(--font-size-inlinecode);
-  color: var(--primary-color);
-  background-color: var(--bg-color-light);
+  color: #ffffff;
+  background-color: var(--primary-color);
   padding: 2px 4px 0px 4px;
 }
 
@@ -264,12 +264,9 @@ table td {
   border: 1px solid var(--table-border-color);
 }
 
-table tr:nth-child(1n) td {
+table tr:nth-child(2n),
+thead {
   background-color: var(--bg-color-light);
-}
-
-table tr:nth-child(2n) td {
-  background-color: var(--bg-color);
 }
 
 /*side bar */

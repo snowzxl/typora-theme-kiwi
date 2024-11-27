@@ -1,18 +1,14 @@
 # Typora Theme Kiwi
 
-## Basic Syntax
+## Basic Syntax··
 
 ### Headings
 
-> ## Heading level 2 标题级别 2
->
-> ### Heading level 3 标题级别 3
->
 > #### Heading level 4 标题级别 4
 >
 > #### Heading level 5 标题级别 5
 >
-> ##### Heading level 6 标题级别 6
+> ##### Heading level 6 
 
 ### Emphasis
 
