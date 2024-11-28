@@ -42,7 +42,7 @@ You can use [md_syntax.md](https://github.com/snowzxl/typora-theme-kiwi/blob/mai
 
 Font type:
 
-- Latin font type [Open Sans](https://fonts.google.com/specimen/Open+Sans);
+- Latin font type [Montserrat](https://fonts.google.com/specimen/Montserrat);
 
 - Chinese font type [LxgwWenKai](https://github.com/lxgw/LxgwWenKai);
 
@@ -51,7 +51,7 @@ Font type:
 Code Syntax highlight:
 
 - Code fences use [code-mirror.css](https://github.com/snowzxl/typora-theme-kiwi/blob/main/kiwi/code-mirror.css);
--  source code mode use  [sourcemode.css](https://github.com/snowzxl/typora-theme-kiwi/blob/main/kiwi/sourcemode.css).
+- source code mode use [sourcemode.css](https://github.com/snowzxl/typora-theme-kiwi/blob/main/kiwi/sourcemode.css).
 
 Only tested on Windows, not tested on MacOS/Linux.
 
@@ -62,7 +62,7 @@ If you have any issues or suggestions, welcome to submit [Issues](https://github
 Kiwi is inspired and guided by (and borrows elements from) some excellent works.
 
 - [Typora Documents](https://theme.typora.io/doc/) for find how to write a theme
-- [Nord](https://www.nordtheme.com/) foe syntax highlight
+- [Nord](https://www.nordtheme.com/) syntax highlight
 - [LxgwWenKai](https://github.com/lxgw/LxgwWenKai) and [Cascadia code ](https://github.com/microsoft/cascadia-code)for font type.
 
 ## License
