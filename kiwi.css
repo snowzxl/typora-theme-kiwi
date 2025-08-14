@@ -15,25 +15,25 @@
   --blur-text-color: #c8c8c8;
   --drag-placeholder-color: #c7c5c5;
   --panel-border-color: #777777;
-  --active-toggle-btn-color: #b1d725; /* btn border and active color */
+  --active-toggle-btn-color: #254b03; /* btn border and active color */
   --table-border-color: #e6e6e6; /* table border color */
-  --primary-color: #c0d725; /* theme color, sidebar sort btn,  */
+  --primary-color: #3e7204; /* theme color, sidebar sort btn,  */
   --primary-btn-border-color: red;
   --primary-btn-text-color: green;
   --search-select-bg-color: green;
   --search-select-text-color: #fff;
-  --heading-char-color: #b1d725; /* headlings tips color */
+  --heading-char-color: #254b03; /* headlings tips color */
   --color-popover-bg-color: #fafafa;
   --control-text-color: var(--text-color);
   --control-text-hover-color: var(--text-color);
   --window-border: 1px solid #f3f3f3; /* window btn border color */
   --active-file-bg-color: #e6e6e6; /*background color if list item in file tree or file list*/
-  --active-file-text-color: #b1d725; /* filenode and outline active */
-  --active-file-border-color: #b1d725;
+  --active-file-text-color: #254b03; /* filenode and outline active */
+  --active-file-border-color: #254b03;
   --focus-ring-color: #f3f3f3;
   --side-bar-bg-color: #f3f3f3; /*change background of sidebar*/
   --item-hover-bg-color: #e6e6e6; /* hover background */
-  --item-hover-text-color: #b1d725; /* hover background */
+  --item-hover-text-color: #254b03; /* hover background */
   --side-bar-menu-active-tint: red;
   --mac-title-bar-height: 20px;
   --sidebar-width: 270px;
@@ -177,9 +177,9 @@ body {
   color: var(--primary-color);
 }
 
-/*link*/
+/* link */
 #write a {
-  color: var(--primary-color);
+  color: var(--meta-content-color);
 }
 
 /* highlight */
@@ -206,6 +206,7 @@ p {
 
 /* inline code */
 code {
+  font-family: "TypeMono", "TypeCJK";
   font-size: var(--font-size-inlinecode);
   color: #ffffff;
   background-color: var(--primary-color);

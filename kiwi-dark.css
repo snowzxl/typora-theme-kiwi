@@ -177,9 +177,9 @@ body {
   color: var(--primary-color);
 }
 
-/*link*/
+/* link */
 #write a {
-  color: var(--primary-color);
+  color: var(--meta-content-color);
 }
 
 /* highlight */
@@ -206,6 +206,7 @@ p {
 
 /* inline code */
 code {
+  font-family: "TypeMono", "TypeCJK";
   font-size: var(--font-size-inlinecode);
   color: #000000;
   background-color: var(--primary-color);
